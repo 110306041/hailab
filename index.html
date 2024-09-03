@@ -1,55 +1,846 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Automation Interaction Lab</title>
-    <style>
-        body {
-            background-color: white;
-            color: black;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: blue;
-            font-size: 2.5em;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h2 {
-            color: blue;
-            font-size: 2em;
-            text-align: center;
-            margin-top: 30px;
-        }
-        .content {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-        .dropdown {
-            display: none; /* 隐藏整个下拉菜单 */
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <h1>Human Automation Interaction Lab</h1>
+    <title>People &middot; Human Automation Interaction Lab</title>
+    <link rel="icon" href="/static/images/pr_logo.900x900.jpg" />
 
-    <div class="content">
-        <h2>Research Areas</h2>
-        <p>Explore our key research areas.</p>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
 
-        <h2>Projects</h2>
-        <p>Discover the projects we're working on.</p>
+  <body>
+    <div class="container">
+      <div class="row">
+        <nav
+          class="col navbar navbar-expand-lg bg-white navbar-light mb-2 py-3"
+        >
+          <a class="navbar-brand" href="/">
+            <img src="/static/images/pr_logo.900x900.jpg" />
+            Personal Robotics Lab
+          </a>
 
-        <h2>Publications</h2>
-        <p>Read our latest research papers and publications.</p>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <h2>Contact</h2>
-        <p>Get in touch with us for more information.</p>
+          <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="research"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Research
+                </a>
+                <div class="dropdown-menu" aria-labelledby="research">
+                  <a class="dropdown-item" href="/research/">Overview</a>
+                  <a class="dropdown-item" href="https://robotfeeding.io/"
+                    >Assistive Feeding</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="https://racer.cs.washington.edu/"
+                    >Off-Road Racing</a
+                  >
+                  <a class="dropdown-item" href="https://mushr.io/"
+                    >Multi-Agent Cars</a
+                  >
+                  <a class="dropdown-item" href="/software/">Software</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="people"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  People
+                </a>
+                <div class="dropdown-menu" aria-labelledby="people">
+                  <a class="dropdown-item" href="/people/">Lab Members</a>
+                  <a
+                    class="dropdown-item"
+                    href="https://robotics.cs.washington.edu/urop/"
+                    >Joining (Undergrad)</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/teaching/">Teaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/videos/">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/press/">Press</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/ssrinivasa.jpg"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5>
+            <a href="https://homes.cs.washington.edu/~siddh/"
+              >Siddhartha Srinivasa</a
+            >
+          </h5>
+          <p>
+            Prof. Siddhartha Srinivasa founded the Personal Robotics Lab with
+            the goal of enabling robots to perform complex manipulation tasks
+            under uncertainty and clutter, with and around people. Sidd is also
+            passionate about building end-to-end systems (HERB, ADA, HRP3,
+            CHIMP, Andy, among others) that integrate perception, planning, and
+            control in the real world. Understanding the interplay between
+            system components has helped produce state of the art algorithms for
+            object recognition and pose estimation (MOPED), and dense 3D
+            modeling (CHISEL, now used by Google Project Tango).
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/tkesslerfaulkner.jpg"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5>
+            <a href="https://www.taylorkesslerfaulkner.com"
+              >Taylor Kessler Faulkner</a
+            >
+          </h5>
+          <p>
+            Taylor Kessler Faulkner is a postdoc in the Allen School of Computer
+            Science and Engineering at the University of Washington, working
+            with Prof. Srinivasa. Her research interests include human-robot
+            interaction and machine learning. Taylor&#39;s recent work is on
+            developing interactive algorithms for robots learning from
+            non-expert human teachers, and she is leading the Robot-Assisted
+            Feeding project at PRL. Taylor received her Ph.D. in Computer
+            Science from The University of Texas at Austin, and her B.S. in
+            Computer Science from Denison University.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/mschmittle.jpg"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5><a href="https://www.mattschmittle.com/">Matt Schmittle</a></h5>
+          <p>
+            Matt Schmittle is a PhD student at the University of Washington
+            advised by Siddhartha Srinivasa. His research interests are in using
+            Bayesian and online methods for model-based manipulation. Matt
+            earned his B.S. in Computer and Information Sciences from the
+            University of Delaware. He has previously worked as a research
+            intern in GRASP Lab at UPenn.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/amaln.jpg"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5><a href="https://amalnanavati.com/">Amal Nanavati</a></h5>
+          <p>
+            Amal Nanavati is a PhD student at the University of Washington
+            advised by Siddhartha Srinivasa and Maya Cakmak. His research
+            interests are in lifelong robot learning, human-robot interaction,
+            and multiparty interactions. Amal earned his B.S. in Computer
+            Science with an additional major in Global Studies from Carnegie
+            Mellon University. He has previously worked as a research student at
+            the HRI Laboratory at Kyoto University, Japan.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/bzhu.jpg"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5><a href="https://berniezhu.github.io/">Bernie Zhu</a></h5>
+          <p>
+            Bernie Zhu is a PhD student at the University of Washington who
+            builds, trains, and works with Geodude. His work is TRASH: Teaching
+            Robotic Agents Skills of Humans. He is interested in
+            humanoid/bimanual robotic manipulation, robot learning, human-robot
+            interaction and alignment. Bernie earned his B.Eng. in Computer
+            Science from Zhejiang University. Before joining UW, he was a
+            researcher at Carnegie Mellon University and later worked as a
+            mechanical engineer in Africa.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/helen.png"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5>
+            <a href="https://www.linkedin.com/in/yi-ru-helen-wang/"
+              >Helen Wang</a
+            >
+          </h5>
+          <p>
+            Helen Wang is a PhD student at the University of Washington advised
+            by Siddhartha Srinivasa and Dieter Fox. Her research interests are
+            in robot learning, vision, and planning. Helen earned her B.A.Sc in
+            Engineering Science - Robotics Engineering from the University of
+            Toronto.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/sidtalia.png"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5><a href="https://www.sidharthtalia.com/">Sidharth Talia</a></h5>
+          <p>
+            Sidharth Talia is a Ph.D. student at the University of washington
+            advised by Siddhartha Srinivasa. He currently leads the MuSHR
+            project and is interested in control and estimation for mobile
+            robotics, leaning towards agile autonomy and field robotics. He
+            worked remotely with the P.R.L. before his Ph.D., and has spent
+            significant time in labs as well as start-ups incubated in IIT-Delhi
+            while earning his Bachelors in Technology from Bharati Vidyapeeth
+            College of Engineering Delhi.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 200px"
+            src="/static/images/people/yzhang.jpg"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5><a href="https://yunchuzhang.github.io/">Yunchu Zhang</a></h5>
+          <p>
+            Yunchu Zhang is a PhD student at the University of Washington
+            advised by Siddhartha Srinivasa and Abhishek Gupta. He is interested
+            in combining classic and learning methods to make robots smart.
+            Before joining UW, he earned his M.S. from the Robotics Institute at
+            Carnegie Mellon University.
+          </p>
+        </div>
+      </div>
+
+      <h5>Alumni</h5>
+
+      <h6>Students</h6>
+
+      <dl class="row mb-3">
+        <dt class="col-12 col-sm-3">
+          <a href="https://kelym.github.io/">Liyiming Ke</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2024, now at Physical Intelligence (π)
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://samlikes.pizza/">Samuel Ainsworth</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2023, now Research Scientist at Cruise
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://ethankgordon.com">Ethan K. Gordon</a>
+        </dt>
+        <dd class="col-12 col-sm-9">PhD 2023, now Postdoc at UPenn</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.william-agnew.com">William Agnew</a>
+        </dt>
+        <dd class="col-12 col-sm-9">PhD 2023, now Postdoc at CMU</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://brianhou.com/">Brian Hou</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2022, now Researcher at Aurora Innovation
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://sniyaz.weebly.com/">Sherdil Niyaz</a>
+        </dt>
+        <dd class="col-12 col-sm-9">PhD 2022, now Engineer at Motional</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://palanc.github.io/">Patrick Lancaster</a>
+        </dt>
+        <dd class="col-12 col-sm-9">PhD 2022, now Postdoc at Meta (FAIR)</dd>
+
+        <dt class="col-12 col-sm-3">Nansong Yi</dt>
+        <dd class="col-12 col-sm-9">MS 2021, now Engineer at Amazon</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.adityavk.com">Aditya Mandalika</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2021, now Researcher at Aurora Innovation
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://gilwoolee.github.io">Gilwoo Lee</a>
+        </dt>
+        <dd class="col-12 col-sm-9">PhD 2020, now CEO and Founder of Zordi</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://colinxsummers.com">Colin Summers</a>
+        </dt>
+        <dd class="col-12 col-sm-9">MS 2020</dd>
+
+        <dt class="col-12 col-sm-3">Matthew Rockett</dt>
+        <dd class="col-12 col-sm-9">MS 2020, now Engineer at Zordi</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://micha.love/">Johan Michalove</a>
+        </dt>
+        <dd class="col-12 col-sm-9">MS 2019, now PhD at Cornell</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://sites.google.com/view/jslee">Jeongseok Lee</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          MS 2018, now Research Engineer at Meta Reality Labs
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.ri.cmu.edu/person.html?person_id=3157"
+            >Laura Herlant</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2018, now Research Scientist at BDAII
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.cs.cmu.edu/~zmarinho/">Zita Marinho</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2018, now Research Scientist at Sacoor Brothers
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://stefanosnikolaidis.net">Stefanos Nikolaidis</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2018, now Assistant Professor at USC
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.cs.cmu.edu/~sjavdani">Shervin Javdani</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2017, now Researcher at Aurora Innovation
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.ri.cmu.edu/person.html?person_id=3873"
+            >Shushman Choudhury</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">MS 2017, now PhD at Stanford</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://rosarioscalise.com/">Rosario Scalise</a>
+        </dt>
+        <dd class="col-12 col-sm-9">MS 2017, now PhD at UW</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.ri.cmu.edu/person.html?person_id=3883">Shen Li</a>
+        </dt>
+        <dd class="col-12 col-sm-9">MS 2017, now PhD at MIT</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.ri.cmu.edu/person.html?person_id=2915"
+            >Jennifer King</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2016, now Researcher at Berkshire Grey
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://mkoval.org">Michael Koval</a>
+        </dt>
+        <dd class="col-12 col-sm-9">PhD 2016, now Researcher at Waymo</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.ri.cmu.edu/person.html?person_id=2267"
+            >Chris Dellin</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">PhD 2016, now Researcher at Nuro</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://matthewklingensmith.com">Matt Klingensmith</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2016, now Engineer at Boston Dynamics
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://aaronwalsman.com/">Aaron Walsman</a>
+        </dt>
+        <dd class="col-12 col-sm-9">MS 2015, now PhD at UW</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.cs.cmu.edu/~adragan">Anca Dragan</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2015, now Assistant Professor at Berkeley
+        </dd>
+
+        <dt class="col-12 col-sm-3">Elizabeth Cha</dt>
+        <dd class="col-12 col-sm-9">MS 2014, now at Aurora</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://engineering.leeds.ac.uk/staff/743/dr_mehmet_dogar"
+            >Mehmet Dogar</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2013, now Assistant Professor at University of Leeds
+        </dd>
+
+        <dt class="col-12 col-sm-3">Kyle Strabala</dt>
+        <dd class="col-12 col-sm-9">
+          MS 2012, now Scientist at Near Earth Autonomy
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.ri.cmu.edu/person.html?person_id=1609"
+            >Alvaro Collet</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2012, now Research Scientist at Facebook
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://web.eecs.umich.edu/~dmitryb/">Dmitry Berenson</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          PhD 2011, now Associate Professor at Michigan
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.garratt.info">Garratt Gallagher</a>
+        </dt>
+        <dd class="col-12 col-sm-9">MS 2009, now at Google Robotics</dd>
+
+        <dt class="col-12 col-sm-3">Martin Herrmann</dt>
+        <dd class="col-12 col-sm-9">MS 2009, now at TU Braunschweig</dd>
+      </dl>
+
+      <h6>Postdoctoral Fellows</h6>
+
+      <dl class="row mb-3">
+        <dt class="col-12 col-sm-3">
+          <a href="https://chrismavrogiannis.com">Christoforos Mavrogiannis</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          2019-2023, now Assistant Professor at University of Michigan
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.tapomayukh.com">Tapomayukh Bhattacharjee</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          2017-2021, now Assistant Professor at Cornell
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://homes.cs.washington.edu/~fsadeghi/"
+            >Fereshteh Sadeghi</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">
+          2019, now Research Scientist at DeepMind
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.sanjibanchoudhury.com/">Sanjiban Choudhury</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          2018-2019, now Assistant Professor at Cornell
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://homes.cs.washington.edu/~mbarnes/">Matt Barnes</a>
+        </dt>
+        <dd class="col-12 col-sm-9">2018-2019, now at Google</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.ri.cmu.edu/person.html?person_id=4530"
+            >Daqing Yi</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">2016-2018, now at Google</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://www.orensalzman.com">Oren Salzman</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          2016-2017, now Assistant Professor at the Technion
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="http://hennyadmoni.com">Henny Admoni</a>
+        </dt>
+        <dd class="col-12 col-sm-9">
+          2015-2017, now Assistant Professor at CMU
+        </dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.ri.cmu.edu/person.html?person_id=3592"
+            >Aaron Johnson</a
+          >
+        </dt>
+        <dd class="col-12 col-sm-9">
+          2015-2016, now Assistant Professor at CMU
+        </dd>
+      </dl>
+
+      <h6>Research Staff</h6>
+
+      <dl class="row mb-3">
+        <dt class="col-12 col-sm-3">Haya Bolotski</dt>
+        <dd class="col-12 col-sm-9">2024, now undergraduate at MIT</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.raidakarim.com/">Raida Karim</a>
+        </dt>
+        <dd class="col-12 col-sm-9">2022-2023</dd>
+
+        <dt class="col-12 col-sm-3">
+          <a href="https://www.cs.cornell.edu/~madan/">Rishabh Madan</a>
+        </dt>
+        <dd class="col-12 col-sm-9">2019-2020, now PhD at Cornell</dd>
+
+        <dt class="col-12 col-sm-3">Youngsun Kim</dt>
+        <dd class="col-12 col-sm-9">2017-2019, now at Amazon</dd>
+
+        <dt class="col-12 col-sm-3">Hanjun Song</dt>
+        <dd class="col-12 col-sm-9">2016-2019, now PhD at MIT</dd>
+      </dl>
+
+      <h6>Graduate Interns</h6>
+
+      <div class="row mb-3">
+        <div class="col-sm-3 text-truncate">
+          <a href="https://davinwinkyi-web.vercel.app/">Davin Win Kyi</a>
+        </div>
+
+        <div class="col-sm-3 text-truncate">Atharva Pradhan</div>
+
+        <div class="col-sm-3 text-truncate">
+          <a href="https://yunchuzhang.github.io/">Yunchu Zhang (CMU)</a>
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          Daniel Gallenberger (TU Munich)
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          Stefania Pellegrinelli (ITIA-:CNR)
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          Gabriel Quéré (ENSTA ParisTech)
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          Marco Cognetti (University of Rome)
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          Joshua Haustein (Universität Karlsruhe)
+        </div>
+
+        <div class="col-sm-3 text-truncate">Henny Admoni (Yale)</div>
+
+        <div class="col-sm-3 text-truncate">Georg Bartels (TU Bremen)</div>
+
+        <div class="col-sm-3 text-truncate">Katie Correll</div>
+
+        <div class="col-sm-3 text-truncate">Michael Koval</div>
+
+        <div class="col-sm-3 text-truncate">Steven Gray (Penn)</div>
+
+        <div class="col-sm-3 text-truncate">
+          Vincenzo Micelli (University of Parma)
+        </div>
+
+        <div class="col-sm-3 text-truncate">Tim Niemueller (RWTH Aachen)</div>
+
+        <div class="col-sm-3 text-truncate">
+          Peter Kaiser (Universität Karlsruhe)
+        </div>
+
+        <div class="col-sm-3 text-truncate">Maya Cakmak (Georgia Tech)</div>
+
+        <div class="col-sm-3 text-truncate">Alex Sorokin (UIUC)</div>
+
+        <div class="col-sm-3 text-truncate">Lillian Chang</div>
+
+        <div class="col-sm-3 text-truncate">Ross Knepper</div>
+
+        <div class="col-sm-3 text-truncate">Laura Lindzey</div>
+
+        <div class="col-sm-3 text-truncate">Manuel Martinez</div>
+
+        <div class="col-sm-3 text-truncate">
+          Julius Ziegler (Universität Karlsruhe)
+        </div>
+
+        <div class="col-sm-3 text-truncate">Nico Blodow (TU Munich)</div>
+
+        <div class="col-sm-3 text-truncate">Geoffrey Hollinger</div>
+
+        <div class="col-sm-3 text-truncate">Kevin Peterson</div>
+
+        <div class="col-sm-3 text-truncate">Nathan Ratliff</div>
+
+        <div class="col-sm-3 text-truncate">Martin Rufli (ETH, Zürich)</div>
+
+        <div class="col-sm-3 text-truncate">Rosen Diankov</div>
+
+        <div class="col-sm-3 text-truncate">Michael Ashley-Rollman</div>
+
+        <div class="col-sm-3 text-truncate">Stuart Anderson</div>
+
+        <div class="col-sm-3 text-truncate">Michael DeRosa</div>
+
+        <div class="col-sm-3 text-truncate">Ashish Deshpande (U. Mich)</div>
+
+        <div class="col-sm-3 text-truncate">Jiaxin Fu</div>
+
+        <div class="col-sm-3 text-truncate">Preethi Bhatt</div>
+      </div>
+
+      <h6>Undergraduate Interns</h6>
+
+      <div class="row">
+        <div class="col-sm-3 text-truncate">
+          <a href="https://bariona.github.io/">Quanquan Peng (SJTU)</a>
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          <a href="https://rayxsong.com/">Ray Song</a>
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          <a href="https://quinnmp.github.io/">Quinn Pfeifer</a>
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          <a href="https://abhaybd.github.io/">Abhay Deshpande</a>
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          <a href="https://rohanblueboybaijal.github.io/"
+            >Rohan Baijal (IIT Kanpur)</a
+          >
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          <a href="https://sriya.sh/">Sriyash Poddar (IIT Kharagpur)</a>
+        </div>
+
+        <div class="col-sm-3 text-truncate">
+          Maha Alrashed (Boston University)
+        </div>
+
+        <div class="col-sm-3 text-truncate">Abdullah Albakry (NC State)</div>
+
+        <div class="col-sm-3 text-truncate">Kaiden Field</div>
+
+        <div class="col-sm-3 text-truncate">Connor Geiman</div>
+
+        <div class="col-sm-3 text-truncate">Tao Jin</div>
+
+        <div class="col-sm-3 text-truncate">Jeffrey Maxwell</div>
+
+        <div class="col-sm-3 text-truncate">Shivam Singhal</div>
+
+        <div class="col-sm-3 text-truncate">Savanna Yee</div>
+
+        <div class="col-sm-3 text-truncate">Nanda Sundaresan</div>
+
+        <div class="col-sm-3 text-truncate">Ramon Qu</div>
+
+        <div class="col-sm-3 text-truncate">Vinitha Ranganeni</div>
+
+        <div class="col-sm-3 text-truncate">Kevin Zhang</div>
+
+        <div class="col-sm-3 text-truncate">Pengju Jin</div>
+
+        <div class="col-sm-3 text-truncate">Minae Kwon</div>
+
+        <div class="col-sm-3 text-truncate">Anton Kuznetsov</div>
+
+        <div class="col-sm-3 text-truncate">Matt Harding</div>
+
+        <div class="col-sm-3 text-truncate">Arpit Saxena (IIT Kharagpur)</div>
+
+        <div class="col-sm-3 text-truncate">Joey Fernau</div>
+
+        <div class="col-sm-3 text-truncate">Angela Wang</div>
+
+        <div class="col-sm-3 text-truncate">Peter McHale</div>
+
+        <div class="col-sm-3 text-truncate">Vikram Sunder</div>
+
+        <div class="col-sm-3 text-truncate">Don Zheng</div>
+
+        <div class="col-sm-3 text-truncate">Neil Jassal</div>
+
+        <div class="col-sm-3 text-truncate">Myles Blodnick</div>
+
+        <div class="col-sm-3 text-truncate">Scott Martin</div>
+
+        <div class="col-sm-3 text-truncate">Yuyang Guo</div>
+
+        <div class="col-sm-3 text-truncate">Rachel Holladay</div>
+
+        <div class="col-sm-3 text-truncate">Andrey Kurenkov (Georgia Tech)</div>
+
+        <div class="col-sm-3 text-truncate">Abhijeet Tallavajhula (IIT)</div>
+
+        <div class="col-sm-3 text-truncate">Bo Xiong (Connecticut)</div>
+
+        <div class="col-sm-3 text-truncate">Corina Guaru (Jacobs)</div>
+
+        <div class="col-sm-3 text-truncate">Debidatta Dwebi (IIT)</div>
+
+        <div class="col-sm-3 text-truncate">Kenton Lee (Penn)</div>
+
+        <div class="col-sm-3 text-truncate">Dominic Zirbel</div>
+
+        <div class="col-sm-3 text-truncate">Tom Mullins</div>
+
+        <div class="col-sm-3 text-truncate">Nick Stanley</div>
+
+        <div class="col-sm-3 text-truncate">Alex Zirbel</div>
+
+        <div class="col-sm-3 text-truncate">Tudor Achim</div>
+
+        <div class="col-sm-3 text-truncate">Andrew Yeager</div>
+
+        <div class="col-sm-3 text-truncate">Ian-Clanton Thuon</div>
+
+        <div class="col-sm-3 text-truncate">Daniel Dewey</div>
+      </div>
     </div>
 
-</body>
+    <footer class="footer" style="height: 5rem"></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
