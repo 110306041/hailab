@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>HAI Lab</title>
+    <link rel="icon" href="./logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .experience {
+        display: flex;
+        justify-content: space-between; /* 保證年份和左邊文本靠近但保持對齊 */
+        padding: 5px 0; /* 控制上下間距 */
+      }
+
+      .experience-left {
+        text-align: left; /* 左對齊 */
+        padding: 5px 0; /* 控制上下間距 */
+      }
+
+      .experience-right {
+        white-space: nowrap; /* 確保年份不換行 */
+        text-align: right; /* 年份右對齊 */
+        padding: 5px 0; /* 控制上下間距 */
+      }
+
+      h5 {
+        margin-top: 30px;
+      }
+      h5.no-spacing {
+        margin-top: 0;
+      }
+
+      .content-restricted {
+        max-width: 900px; /* 設定你希望的最大寬度 */
+        margin: 0 auto; /* 讓內容在寬螢幕上居中顯示 */
+        padding: 20px; /* 適當的內間距 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <nav
+          class="col navbar navbar-expand-lg bg-white navbar-light mb-2 py-3"
+        >
+          <a class="navbar-brand" href="./index.html">
+            <!-- <img src="./logo.png" /> -->
+            Human Automation Interaction Lab
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="research"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Research
+                </a>
+                <div class="dropdown-menu" aria-labelledby="research">
+                  <a class="dropdown-item" href="./hri.html">HRI</a>
+                  <a class="dropdown-item" href="./eeg.html">EEG</a>
+                  <a class="dropdown-item" href="./hai.html">HAI</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./people.html">People</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./teaching.html">Teaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./publications.html">Publications</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="row mb-3">
+        <div
+          class="ml-auto col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2 mb-3 text-center"
+        >
+          <img
+            class="img img-fluid"
+            style="max-height: 300px"
+            src="./james.jpg"
+          />
+        </div>
+        <div class="mr-auto col-12 col-md-8 mb-3">
+          <h5 class="no-spacing">
+            <a
+              href="https://mis2.nccu.edu.tw/en/Faculty/Faculty_01/%E7%B0%A1-%E5%A3%AB%E9%8E%B0-42311139"
+              >Shih-Yi (James) Chien</a
+            >
+          </h5>
+          <p>
+            Shih-Yi Chien completed his M.S. and Ph.D. in the School of
+            Information Sciences at the University of Pittsburgh in 2009 and
+            2016, respectively. His research interests include Human Automation
+            Interaction, Trust in Automation, and Supervisory Control in
+            Multi-Agent System. To enabling team supervisory control for large
+            agent teams, from 2009 to 2012, his works focused on modeling
+            coordinated interactions in multi-human multi-agent teams and
+            investigating human attention allocation in multi-task environments
+            to improve human-robot interaction (HRI) performance. His thesis
+            project investigates the influence of cultural factors on trust in
+            automation, in order to develops a fundamental understanding of
+            principles and factors pertaining to trust in automation, and how
+            trust mediates reliance on automation across cultures.
+          </p>
+        </div>
+      </div>
+      <div class="content-restricted">
+        <h5>Research Interests</h5>
+        <p>
+          Human-Robot Interaction, Human-AI Collaboration, Social Robots, User
+          Experience, Explainable AI
+        </p>
+
+        <h5>Professional Experience</h5>
+        <div class="experience">
+          <div class="experience-left">
+            Associate Professor, Dept. of Management Information Systems <br />
+            National Chengchi University, Taipei, Taiwan <br />
+            - Director, Human-Automation Interaction Lab
+          </div>
+          <div class="experience-right">2023-</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            Assistant Professor, Dept. of Management Information Systems <br />
+            National Chengchi University, Taipei, Taiwan
+          </div>
+          <div class="experience-right">2018-2023</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            Assistant Professor, Dept. of Management Information <br />
+            National Sun Yat-sen University, Kaohsiung, Taiwan
+          </div>
+          <div class="experience-right">2017-2018</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            Teaching Fellow, School of Computing and Information <br />
+            University of Pittsburgh, Pittsburgh, USA
+          </div>
+          <div class="experience-right">2015-2017</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            Research Assistant, School of Computing and Information <br />
+            University of Pittsburgh, Pittsburgh, USA
+          </div>
+          <div class="experience-right">2009-2017</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            Instructor, Dept. of Asian Languages <br />
+            University of Pittsburgh, Pittsburgh, USA
+          </div>
+          <div class="experience-right">2008-2009</div>
+        </div>
+
+        <h5>Education</h5>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Ph.D. in Information Science </strong>
+          </div>
+          <div class="experience-right">2017</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>M.S. in Information Science </strong> <br />
+            University of Pittsburgh, Pittsburgh, USA <br />
+            Dissertation: The Influence of Cultural Factors on Trust in
+            Automation
+            <br />
+            Adviser: Prof. Michael Lewis (Information Science, Univ. of
+            Pittsburgh) <br />
+            Prof. Katia Sycara (Robotics, Carnegie Mellon University)
+          </div>
+          <div class="experience-right">2009</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>B.S. in Information Management </strong> <br />
+            Chung Hua University, Hsinchu, Taiwan
+          </div>
+          <div class="experience-right">2004</div>
+        </div>
+
+        <h5>Honors and Awards</h5>
+
+        <div class="experience-left">
+          <strong
+            >Excellent Paper Award in Information Management and Innovative
+            Application
+          </strong>
+          <br />
+          Fubon Life Management Doctor and Master Thesis Award, 2022 <br />
+          Chinese Management Association, Taiwan
+        </div>
+
+        <div class="experience-left">
+          <strong>Teaching Outstanding Award</strong> <br />
+          Course: Intro to Data Analysis and Programming (2022) <br />
+          National Chengchi University, Taiwan
+        </div>
+
+        <div class="experience-left">
+          <strong>Excellent Undergraduate English-taught Courses</strong> <br />
+          Course: Introduction to Computer Science (2018), User Experience
+          Design (2020) <br />
+          National Chengchi University, Taiwan
+        </div>
+
+        <div class="experience-left">
+          <strong>Teaching Outstanding Award</strong> <br />
+          Course: Web Programming (2017), Intelligent Robotic Systems (2017),
+          Web User Experience (2018) <br />
+          National Sun Yat-sen University, Taiwan
+        </div>
+
+        <div class="experience-left">
+          <strong>Best Paper Award</strong> <br />
+          Towards the development of an Inter-Cultural Scale to Measure Trust in
+          Automation <br />
+          International Conference on Human-Computer Interaction (HCII 2014)
+        </div>
+
+        <div class="experience-left">
+          <strong>Best Student Paper Honorable Mention Award</strong> <br />
+          Effects of Unreliable Automation in Scheduling Operator Attention for
+          Multi-Robot Control <br />
+          IEEE International Conference on Systems, Man, and Cybernetics, 2012
+          (IEEE SMC 2012)
+        </div>
+      </div>
+      >
+      <footer class="footer" style="height: 5rem"></footer>
+
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
