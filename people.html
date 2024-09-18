@@ -36,9 +36,16 @@
         padding: 5px 0; /* 控制上下間距 */
       }
 
+      .details-right {
+        flex-basis: 70%; /* 右側資訊的寬度 */
+        text-align: left; /* 文字在右側仍然左對齊 */
+      }
+
       h5 {
         margin-top: 30px;
+        color: #007bff;
       }
+
       h5.no-spacing {
         margin-top: 0;
       }
@@ -47,6 +54,11 @@
         max-width: 900px; /* 設定你希望的最大寬度 */
         margin: 0 auto; /* 讓內容在寬螢幕上居中顯示 */
         padding: 20px; /* 適當的內間距 */
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
       }
     </style>
   </head>
@@ -141,8 +153,9 @@
           </p>
         </div>
       </div>
+
       <div class="content-restricted">
-        <h5>Research Interests</h5>
+        <h5 class="no-spacing">Research Interests</h5>
         <p>
           Human-Robot Interaction, Human-AI Collaboration, Social Robots, User
           Experience, Explainable AI
@@ -231,52 +244,124 @@
 
         <h5>Honors and Awards</h5>
 
-        <div class="experience-left">
-          <strong
-            >Excellent Paper Award in Information Management and Innovative
-            Application
-          </strong>
-          <br />
-          Fubon Life Management Doctor and Master Thesis Award, 2022 <br />
-          Chinese Management Association, Taiwan
+        <div class="experience">
+          <div class="experience-left">
+            <strong
+              >Excellent Paper Award in Information Management and Innovative
+              Application</strong
+            ><br />
+            Fubon Life Management Doctor and Master Thesis Award, 2022 <br />
+            Chinese Management Association, Taiwan
+          </div>
         </div>
 
-        <div class="experience-left">
-          <strong>Teaching Outstanding Award</strong> <br />
-          Course: Intro to Data Analysis and Programming (2022) <br />
-          National Chengchi University, Taiwan
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Teaching Outstanding Award</strong><br />
+            Course: Intro to Data Analysis and Programming (2022) <br />
+            National Chengchi University, Taiwan
+          </div>
         </div>
 
-        <div class="experience-left">
-          <strong>Excellent Undergraduate English-taught Courses</strong> <br />
-          Course: Introduction to Computer Science (2018), User Experience
-          Design (2020) <br />
-          National Chengchi University, Taiwan
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Excellent Undergraduate English-taught Courses</strong
+            ><br />
+            Course: Introduction to Computer Science (2018), User Experience
+            Design (2020) <br />
+            National Chengchi University, Taiwan
+          </div>
         </div>
 
-        <div class="experience-left">
-          <strong>Teaching Outstanding Award</strong> <br />
-          Course: Web Programming (2017), Intelligent Robotic Systems (2017),
-          Web User Experience (2018) <br />
-          National Sun Yat-sen University, Taiwan
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Teaching Outstanding Award</strong><br />
+            Course: Web Programming (2017), Intelligent Robotic Systems (2017),
+            Web User Experience (2018) <br />
+            National Sun Yat-sen University, Taiwan
+          </div>
         </div>
 
-        <div class="experience-left">
-          <strong>Best Paper Award</strong> <br />
-          Towards the development of an Inter-Cultural Scale to Measure Trust in
-          Automation <br />
-          International Conference on Human-Computer Interaction (HCII 2014)
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Best Paper Award</strong><br />
+            Towards the development of an Inter-Cultural Scale to Measure Trust
+            in Automation <br />
+            International Conference on Human-Computer Interaction (HCII 2014)
+          </div>
         </div>
 
-        <div class="experience-left">
-          <strong>Best Student Paper Honorable Mention Award</strong> <br />
-          Effects of Unreliable Automation in Scheduling Operator Attention for
-          Multi-Robot Control <br />
-          IEEE International Conference on Systems, Man, and Cybernetics, 2012
-          (IEEE SMC 2012)
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Best Student Paper Honorable Mention Award</strong><br />
+            Effects of Unreliable Automation in Scheduling Operator Attention
+            for Multi-Robot Control <br />
+            IEEE International Conference on Systems, Man, and Cybernetics, 2012
+            (IEEE SMC 2012)
+          </div>
+        </div>
+
+        <h5>Alumni</h5>
+        <div class="experience">
+          <div class="experience-left">Hiu Lam Chow</div>
+          <div class="details-right">MS 2024</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Yen-Wei Chen</div>
+          <div class="details-right">MS 2024, now Engineer at TSMC</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Yin-Hsuan Sung</div>
+          <div class="details-right">MS 2024, now Engineer at Garmin</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Yu-Wen Chang</div>
+          <div class="details-right">MS 2024, now MS at CMU</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Wen-I Lu</div>
+          <div class="details-right">MS 2023, now System Analyst at IBM</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Yu-Liang Weng</div>
+          <div class="details-right">MS 2023, now Engineer at TSMC</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Cheng-Jun Yang</div>
+          <div class="details-right">
+            MS 2022, now Engineer at Amazing Talker
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Bu-Fang Chang</div>
+          <div class="details-right">MS 2021, now Engineer at E. SUN Bank</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Chih-Ling Chen</div>
+          <div class="details-right">MS 2021, now Engineer at CTBC Bank</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Ching-Chih Tsao</div>
+          <div class="details-right">BA 2023, now MS at Cornell Tech</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">Yao-Cheng Chan</div>
+          <div class="details-right">
+            Research Staff 2019-2020, now PhD at UT Austin
+          </div>
         </div>
       </div>
-      >
+
       <footer class="footer" style="height: 5rem"></footer>
 
       <script
