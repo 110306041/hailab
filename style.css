@@ -23,3 +23,6 @@ blockquote {
   width: 100%;
   height: 100%;
 }
+.spaced-list li {
+  margin-bottom: 10px; /* Adjust this value to control the space */
+}
