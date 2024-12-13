@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>HAI Lab</title>
+    <link rel="icon" href="HAILAB_logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .experience {
+        display: flex;
+        justify-content: space-between; /* 保證年份和左邊文本靠近但保持對齊 */
+        padding: 5px 0; /* 控制上下間距 */
+      }
+
+      .experience-left {
+        text-align: left; /* 左對齊 */
+        padding: 5px 0; /* 控制上下間距 */
+      }
+
+      .experience-right {
+        white-space: nowrap; /* 確保年份不換行 */
+        text-align: right; /* 年份右對齊 */
+        padding: 5px 0; /* 控制上下間距 */
+      }
+
+      .details-right {
+        flex-basis: 70%; /* 右側資訊的寬度 */
+        text-align: left; /* 文字在右側仍然左對齊 */
+      }
+
+      h5 {
+        margin-top: 30px;
+        color: #007bff;
+      }
+
+      h5.no-spacing {
+        margin-top: 0;
+      }
+
+      .content-restricted {
+        max-width: 900px; /* 設定你希望的最大寬度 */
+        margin: 0 auto; /* 讓內容在寬螢幕上居中顯示 */
+        padding: 20px; /* 適當的內間距 */
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <nav
+          class="col navbar navbar-expand-lg bg-white navbar-light mb-2 py-3"
+        >
+          <a class="navbar-brand" href="./index.html">
+            <img src="HAILAB_logo.png" style="width: 50px; height: auto" />
+            Human Automation Interaction Lab
+          </a>
+        </nav>
+      </div>
+      <div class="content-restricted">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+          "
+        >
+          <!-- Google Scholar Link -->
+          <a
+            href="https://scholar.google.com.tw/citations?user=eeRyk9UAAAAJ&hl=en"
+            target="_blank"
+          >
+            <img
+              src="Google_Scholar_logo.svg.png"
+              alt="Google Scholar"
+              style="width: 40px; height: auto"
+            />
+          </a>
+
+          <!-- CV Link -->
+          <a
+            href="ShihYiChien_cv.pdf"
+            target="_blank"
+            class="btn btn-outline-primary"
+            >CV</a
+          >
+        </div>
+      </div>
+      <div class="content-restricted">
+        <h5 class="no-spacing">Research Interests</h5>
+        <p>
+          Human-Robot Interaction, Human-AI Collaboration, Social Robots, User
+          Experience, Explainable AI
+        </p>
+
+        <h5>Professional Experience</h5>
+        <div class="experience">
+          <div class="experience-left">
+            <strong
+              >Associate Professor, Dept. of Management Information
+              Systems</strong
+            >
+            <br />
+            National Chengchi University, Taipei, Taiwan <br />
+            - Director, Human-Automation Interaction Lab
+          </div>
+          <div class="experience-right">2023-</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong
+              >Assistant Professor, Dept. of Management Information
+              Systems</strong
+            >
+            <br />
+            National Chengchi University, Taipei, Taiwan
+          </div>
+          <div class="experience-right">2018-2023</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong
+              >Assistant Professor, Dept. of Management Information</strong
+            >
+            <br />
+            National Sun Yat-sen University, Kaohsiung, Taiwan
+          </div>
+          <div class="experience-right">2017-2018</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong
+              >Teaching Fellow, School of Computing and Information</strong
+            >
+            <br />
+            University of Pittsburgh, Pittsburgh, USA
+          </div>
+          <div class="experience-right">2015-2017</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong
+              >Research Assistant, School of Computing and Information</strong
+            >
+            <br />
+            University of Pittsburgh, Pittsburgh, USA
+          </div>
+          <div class="experience-right">2009-2017</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Instructor, Dept. of Asian Languages</strong> <br />
+            University of Pittsburgh, Pittsburgh, USA
+          </div>
+          <div class="experience-right">2008-2009</div>
+        </div>
+
+        <h5>Education</h5>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Ph.D. in Information Science </strong>
+          </div>
+          <div class="experience-right">2017</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>M.S. in Information Science </strong> <br />
+            University of Pittsburgh, Pittsburgh, USA <br />
+            Dissertation: The Influence of Cultural Factors on Trust in
+            Automation
+            <br />
+            Adviser: Prof. Michael Lewis (Information Science, Univ. of
+            Pittsburgh) <br />
+            Prof. Katia Sycara (Robotics, Carnegie Mellon University)
+          </div>
+          <div class="experience-right">2009</div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>B.S. in Information Management </strong> <br />
+            Chung Hua University, Hsinchu, Taiwan
+          </div>
+          <div class="experience-right">2004</div>
+        </div>
+
+        <h5>Honors and Awards</h5>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong
+              >Excellent Paper Award in Information Management and Innovative
+              Application</strong
+            ><br />
+            Fubon Life Management Doctor and Master Thesis Award, 2022 <br />
+            Chinese Management Association, Taiwan
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Teaching Outstanding Award</strong><br />
+            Course: Intro to Data Analysis and Programming (2022) <br />
+            National Chengchi University, Taiwan
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Excellent Undergraduate English-taught Courses</strong
+            ><br />
+            Course: Introduction to Computer Science (2018), User Experience
+            Design (2020) <br />
+            National Chengchi University, Taiwan
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Teaching Outstanding Award</strong><br />
+            Course: Web Programming (2017), Intelligent Robotic Systems (2017),
+            Web User Experience (2018) <br />
+            National Sun Yat-sen University, Taiwan
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Best Paper Award</strong><br />
+            Towards the development of an Inter-Cultural Scale to Measure Trust
+            in Automation <br />
+            International Conference on Human-Computer Interaction (HCII 2014)
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-left">
+            <strong>Best Student Paper Honorable Mention Award</strong><br />
+            Effects of Unreliable Automation in Scheduling Operator Attention
+            for Multi-Robot Control <br />
+            IEEE International Conference on Systems, Man, and Cybernetics, 2012
+            (IEEE SMC 2012)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
